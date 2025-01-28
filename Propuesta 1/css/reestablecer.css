@@ -1,0 +1,123 @@
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+  
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+  
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+  
+main {
+    width: 100%;
+    max-width: 600px; /* Aumenté el valor de max-width para hacerlo más ancho */
+    padding: 20px;
+}
+  
+/* Estilo del formulario */
+form {
+    background: white;
+    border-radius: 15px;
+    padding: 25px; /* Ajusté el padding para dar un poco más de espacio */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Verde */
+    font-size: 1.8rem;
+}
+  
+.input-container {
+    margin-bottom: 15px;
+}
+  
+label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+  
+label i {
+    color: #4CAF50; /* Verde */
+    margin-right: 8px;
+}
+  
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+  
+input:focus {
+    border-color: #4CAF50; /* Verde */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Resaltado en verde */
+}
+  
+small {
+    font-size: 0.85rem;
+    color: #888; /* Texto gris claro */
+}
+  
+.options {
+    display: flex;
+    gap: 10px;
+}
+  
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.95rem;
+}
+  
+/* Estilo del botón */
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Fondo verde */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+  
+button:hover {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50); /* Cambio de gradiente al hacer hover */
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3); /* Sombra verde */
+}
+  
+/* Adaptabilidad para pantallas pequeñas */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

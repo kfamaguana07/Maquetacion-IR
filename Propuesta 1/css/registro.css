@@ -1,0 +1,109 @@
+/* Estilos Globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .registro-detalle {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .registro-detalle h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  .registro-detalle p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .registro-detalle p strong {
+    color: #333;
+  }
+  
+  .acciones {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin: 10px 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn i {
+    font-size: 1.2rem;
+  }
+  
+  /* Botones personalizados */
+  .btn.whatsapp {
+    background: #25D366;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+  }
+  
+  .btn.whatsapp:hover {
+    background: linear-gradient(135deg, #128C7E, #25D366);
+  }
+  
+  .btn.email {
+    background: #FF5722;
+    background: linear-gradient(135deg, #FF5722, #E64A19);
+  }
+  
+  .btn.email:hover {
+    background: linear-gradient(135deg, #E64A19, #FF5722);
+  }
+  
+  .btn.imprimir {
+    background: #2196F3;
+    background: linear-gradient(135deg, #2196F3, #1976D2);
+  }
+  
+  .btn.imprimir:hover {
+    background: linear-gradient(135deg, #1976D2, #2196F3);
+  }
+  

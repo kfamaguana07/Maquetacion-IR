@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Contraseña</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reestablecer.css">
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-key"></i> Recuperar Contraseña</h1>
+  </header>
+  <main>
+    <form id="form-recuperar">
+      <h2>Recuperación de Contraseña</h2>
+
+      <!-- Paso 1: Selección de envío -->
+      <div class="input-container">
+        <label><i class="fas fa-envelope"></i> Selecciona un método para recibir el código:</label>
+        <div class="options">
+          <label>
+            <input type="radio" name="metodo" value="correo" required>
+            Correo Electrónico
+          </label>
+          <label>
+            <input type="radio" name="metodo" value="telefono">
+            Número Telefónico
+          </label>
+        </div>
+      </div>
+
+      <!-- Paso 2: Ingresar Código -->
+      <div class="input-container">
+        <label for="codigo"><i class="fas fa-code"></i> Código de Recuperación:</label>
+        <input type="text" id="codigo" placeholder="Ingrese el código recibido" required>
+        <small>El código es válido por 5 minutos.</small>
+      </div>
+
+      <!-- Paso 3: Nueva Contraseña -->
+      <div class="input-container">
+        <label for="nueva-contraseña"><i class="fas fa-lock"></i> Contraseña Nueva:</label>
+        <input type="password" id="nueva-contraseña" placeholder="Ingrese su nueva contraseña" required>
+        <small>Debe contener entre 10 a 20 caracteres, una mayúscula, una minúscula, un número y un carácter especial.</small>
+      </div>
+
+      <!-- Paso 4: Confirmar Contraseña -->
+      <div class="input-container">
+        <label for="confirmar-contraseña"><i class="fas fa-lock"></i> Confirmar Contraseña:</label>
+        <input type="password" id="confirmar-contraseña" placeholder="Confirme su nueva contraseña" required>
+      </div>
+
+      <!-- Botón Enviar -->
+      <button type="submit">Recuperar Contraseña</button>
+    </form>
+  </main>
+</body>
+</html>
