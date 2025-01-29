@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Mantenimientos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/consultarMantenimiento.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion Mantenimientos</h1>
+        <nav class="tabs">
+            <button class="tab-button" ">Registrar Mantenimiento</button>
+            <button class="tab-button" >Consultar Mantenimiento</button>
+            <button class="tab-button" >Editar Mantenimiento</button>
+            <button class="tab-button" ">Eliminar Mantenimiento</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-container">
+            <h2>Buscar Mantenimientos</h2>
+
+            <form action="#" method="post">
+                <div class="input-container">
+                    <label for="filtro"><i class="fas fa-search"></i> Filtros de Búsqueda</label>
+                    <select id="filtro" name="filtro">
+                        <option value="general">Búsqueda General</option>
+                        <option value="marca">Por Marca</option>
+                        <option value="modelo">Por Modelo</option>
+                        <option value="tipo-equipo">Por Tipo de Equipo</option>
+                    </select>
+                </div>
+
+                <div class="input-container">
+                    <label for="criterio"><i class="fas fa-filter"></i> Criterios de Búsqueda</label>
+                    <input type="text" id="criterio" name="criterio" placeholder="Ingrese el criterio de búsqueda">
+                </div>
+
+                <button type="submit"><i class="fas fa-search"></i> Buscar</button>
+            </form>
+        </section>
+
+        <section class="results-container">
+            <h2>Resultados de la Búsqueda</h2>
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Equipo</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>23/01/2025</td>
+                        <td>Equipo 1</td>
+                        <td>Marca 1</td>
+                        <td>Modelo 1</td>
+                        <td>Reparación Pendiente</td>
+                    </tr>
+                    <tr>
+                        <td>22/01/2025</td>
+                        <td>Equipo 2</td>
+                        <td>Marca 2</td>
+                        <td>Modelo 2</td>
+                        <td>Reparado</td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </section>
+    </main>
+
+</body>
+</html>

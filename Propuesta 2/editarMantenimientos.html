@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Mantenimiento</title>
+
+    <!-- CDN de Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CDN de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/editarMantenimiento.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion Mantenimiento</h1>
+        <nav class="tabs">
+            <button class="tab-button" ">Registrar Mantenimiento</button>
+            <button class="tab-button" >Consultar Mantenimiento</button>
+            <button class="tab-button" >Editar Mantenimiento</button>
+            <button class="tab-button" ">Eliminar Mantenimiento</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="edit-container">
+            <h2>EdSitar Mantenimiento</h2>
+
+            <!-- Formulario para editar mantenimiento -->
+            <form action="#" method="post">
+                <div class="input-container">
+                    <label for="fecha"><i class="fas fa-calendar-alt"></i> Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="input-container">
+                    <label for="equipo"><i class="fas fa-cogs"></i> Equipo</label>
+                    <input type="text" id="equipo" name="equipo" placeholder="Ingrese el nombre del equipo">
+                </div>
+
+                <div class="input-container">
+                    <label for="modelo"><i class="fas fa-cogs"></i> Modelo</label>
+                    <input type="text" id="modelo" name="modelo" placeholder="Ingrese el modelo del equipo">
+                </div>
+
+                <div class="input-container">
+                    <label for="marca"><i class="fas fa-tag"></i> Marca</label>
+                    <input type="text" id="marca" name="marca" placeholder="Ingrese la marca del equipo">
+                </div>
+
+                <div class="input-container">
+                    <label for="telefono"><i class="fas fa-phone"></i> Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese el teléfono del cliente">
+                </div>
+
+                <div class="input-container">
+                    <label for="total"><i class="fas fa-dollar-sign"></i> Total</label>
+                    <input type="number" id="total" name="total" placeholder="Ingrese el total" min="0">
+                </div>
+
+                <div class="input-container">
+                    <label for="abono"><i class="fas fa-dollar-sign"></i> Abono</label>
+                    <input type="number" id="abono" name="abono" placeholder="Ingrese el abono" min="0">
+                </div>
+
+                <div class="input-container">
+                    <label for="saldo"><i class="fas fa-dollar-sign"></i> Saldo</label>
+                    <input type="number" id="saldo" name="saldo" placeholder="Ingrese el saldo" min="0">
+                </div>
+
+                <div class="input-container">
+                    <label for="observaciones"><i class="fas fa-pencil-alt"></i> Observaciones</label>
+                    <textarea id="observaciones" name="observaciones" placeholder="Ingrese observaciones" rows="4"></textarea>
+                </div>
+
+                <button type="submit"><i class="fas fa-save"></i> Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

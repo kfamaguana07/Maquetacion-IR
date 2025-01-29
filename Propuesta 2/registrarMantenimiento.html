@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Mantenimiento</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/registrarMantenimiento.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion Mantenimiento</h1>
+        <nav class="tabs">
+            <button class="tab-button" ">Registrar Mantenimiento</button>
+            <button class="tab-button" >Consultar Mantenimiento</button>
+            <button class="tab-button" >Editar Mantenimiento</button>
+            <button class="tab-button" ">Eliminar Mantenimiento</button>
+        </nav>
+    </header>
+
+
+    <main>
+        <form action="#" method="post">
+            <h2>Formulario de Registro de Mantenimiento</h2>
+
+            <div class="input-container">
+                <label for="fecha"><i class="fas fa-calendar-alt"></i> Fecha</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+
+            <div class="input-container">
+                <label for="equipo"><i class="fas fa-cogs"></i> Equipo</label>
+                <input type="text" id="equipo" name="equipo">
+            </div>
+
+            <div class="input-container">
+                <label for="modelo"><i class="fas fa-box"></i> Modelo</label>
+                <input type="text" id="modelo" name="modelo">
+            </div>
+
+            <div class="input-container">
+                <label for="clave"><i class="fas fa-key"></i> Clave</label>
+                <input type="text" id="clave" name="clave">
+            </div>
+
+            <div class="input-container">
+                <label for="cliente"><i class="fas fa-user"></i> Cliente</label>
+                <input type="text" id="cliente" name="cliente">
+            </div>
+
+            <div class="input-container">
+                <label for="telefono"><i class="fas fa-phone-alt"></i> Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div class="input-container">
+                <label for="marca"><i class="fas fa-tag"></i> Marca</label>
+                <input type="text" id="marca" name="marca">
+            </div>
+
+            <div class="input-container">
+                <label for="num-serie"><i class="fas fa-id-badge"></i> Número de Serie / IMEI</label>
+                <input type="text" id="num-serie" name="num-serie">
+            </div>
+
+            <div class="input-container">
+                <label for="accesorios"><i class="fas fa-box-open"></i> Accesorios</label>
+                <input type="text" id="accesorios" name="accesorios">
+            </div>
+
+            <div class="input-container">
+                <label for="danio"><i class="fas fa-wrench"></i> Daño a Reparar</label>
+                <input type="text" id="danio" name="danio">
+            </div>
+
+            <div class="input-container">
+                <label for="enciende"><i class="fas fa-power-off"></i> Enciende (Sí o No)</label>
+                <select id="enciende" name="enciende">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <label>Componentes Dañados</label>
+                <div class="options">
+                    <label for="botones"><i class="fas fa-toggle-on"></i> Botones</label>
+                    <select id="botones" name="botones">
+                        <option value="dañados">Dañados</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <label for="camara"><i class="fas fa-camera"></i> Cámara</label>
+                    <select id="camara" name="camara">
+                        <option value="dañada">Dañada</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <label for="sensores"><i class="fas fa-sitemap"></i> Sensores</label>
+                    <select id="sensores" name="sensores">
+                        <option value="dañados">Dañados</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <label for="touch-id"><i class="fas fa-fingerprint"></i> Touch ID</label>
+                    <select id="touch-id" name="touch-id">
+                        <option value="dañado">Dañado</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <label for="wifi"><i class="fas fa-wifi"></i> WiFi</label>
+                    <select id="wifi" name="wifi">
+                        <option value="dañado">Dañado</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <label for="senal"><i class="fas fa-signal"></i> Señal</label>
+                    <select id="senal" name="senal">
+                        <option value="dañada">Dañada</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <label for="sonido"><i class="fas fa-volume-up"></i> Sonido</label>
+                    <select id="sonido" name="sonido">
+                        <option value="dañado">Dañado</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <label for="carga"><i class="fas fa-battery-full"></i> Carga</label>
+                    <select id="carga" name="carga">
+                        <option value="dañada">Dañada</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label for="observaciones"><i class="fas fa-comment-dots"></i> Observaciones</label>
+                <textarea id="observaciones" name="observaciones" rows="3"></textarea>
+            </div>
+
+            <div class="input-container">
+                <label for="total"><i class="fas fa-dollar-sign"></i> Total</label>
+                <input type="number" id="total" name="total">
+            </div>
+
+            <div class="input-container">
+                <label for="abono"><i class="fas fa-dollar-sign"></i> Abono</label>
+                <input type="number" id="abono" name="abono">
+            </div>
+
+            <div class="input-container">
+                <label for="saldo"><i class="fas fa-dollar-sign"></i> Saldo</label>
+                <input type="number" id="saldo" name="saldo">
+            </div>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </main>
+
+</body>
+</html>

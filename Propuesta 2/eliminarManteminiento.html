@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Mantenimiento</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/eliminarMantenimiento.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion Mantenimiento</h1>
+        <nav class="tabs">
+            <button class="tab-button" ">Registrar Mantenimiento</button>
+            <button class="tab-button" >Consultar Mantenimiento</button>
+            <button class="tab-button" >Editar Mantenimiento</button>
+            <button class="tab-button" ">Eliminar Mantenimiento</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Paso 1: Selección de mantenimiento -->
+        <section class="select-mantenimiento">
+            <h2>Selecciona el Mantenimiento a Eliminar</h2>
+            <form action="#" method="post">
+                <label for="mantenimiento-select">Seleccionar Mantenimiento:</label>
+                <select id="mantenimiento-select" name="mantenimiento">
+                    <option value="mantenimiento1">Mantenimiento 1</option>
+                    <option value="mantenimiento2">Mantenimiento 2</option>
+                    <option value="mantenimiento3">Mantenimiento 3</option>
+                    <option value="mantenimiento4">Mantenimiento 4</option>
+                </select>
+                <button type="button">Seleccionar Mantenimiento</button>
+            </form>
+        </section>
+
+        <!-- Paso 2: Confirmación de eliminación -->
+        <section class="delete-container">
+            <h2>Confirmación de Eliminación</h2>
+            <div class="confirmation-message">
+                <p><i class="fas fa-exclamation-triangle"></i> ¿Está seguro de que desea eliminar este mantenimiento?</p>
+            </div>
+
+            <!-- Información del mantenimiento seleccionado -->
+            <div class="mantenimiento-info">
+                <p><strong>Equipo:</strong> Mantenimiento 1</p>
+                <p><strong>Modelo:</strong> Modelo XYZ</p>
+                <p><strong>Cliente:</strong> Cliente ABC</p>
+            </div>
+
+            <!-- Botones para confirmar o cancelar -->
+            <div class="action-buttons">
+                <button type="submit" class="confirm-btn"><i class="fas fa-check-circle"></i> Confirmar Eliminación</button>
+                <button type="button" class="cancel-btn">Cancelar</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
