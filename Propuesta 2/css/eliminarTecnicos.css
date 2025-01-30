@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #E53935, #B71C1C);
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Contenedor principal */
+.delete-container {
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 550px;
+    width: 85%;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.delete-container h2 {
+    color: #E53935;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Buscador */
+#buscarTecnico {
+    width: 90%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.85rem;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #E53935;
+    color: white;
+}
+
+/* Botón de eliminar */
+.delete-btn {
+    background: #D32F2F;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+    background: #B71C1C;
+}
+
+/* Cuadro de confirmación */
+.confirmation-box {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones de confirmación */
+.confirm-btn, .cancel-btn {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    width: 45%;
+}
+
+.confirm-btn {
+    background: #D32F2F;
+}
+
+.cancel-btn {
+    background: #757575;
+}
+
+.confirm-btn:hover {
+    background: #B71C1C;
+}
+
+.cancel-btn:hover {
+    background: #616161;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .delete-container {
+        max-width: 90%;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    input {
+        width: 100%;
+    }
+}

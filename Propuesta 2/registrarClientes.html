@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Perfil de Cliente</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/registrarClientes.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registrar Cliente</h1>
+    </header>
+
+    <div class="registration-container">
+        <h2>Ingrese los datos del cliente</h2>
+
+        <form id="registroCliente" action="#" method="POST">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+
+            <label for="identificacion">Identificación:</label>
+            <input type="text" id="identificacion" name="identificacion" placeholder="Ingrese su número de identificación" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección" required>
+
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-user-plus"></i> Registrar
+            </button>
+        </form>
+        
+        <div id="confirmationMessage" class="confirmation-message">
+            <p>¡Registro exitoso! Se ha enviado un correo de confirmación.</p>
+        </div>
+    </div>
+
+</body>
+</html>

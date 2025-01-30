@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Cliente</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/consultarClientes.css">
+</head>
+<body>
+
+    <header>
+        <h1>Consultar Cliente</h1>
+    </header>
+
+    <div class="main-container">
+        <!-- Contenedor de búsqueda y resultados -->
+        <div class="left-container">
+            <div class="search-container">
+                <h2>Buscar Cliente</h2>
+                
+                <!-- Formulario de Búsqueda -->
+                <form id="consultarCliente">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre del cliente">
+                    
+                    <label for="identificacion">Identificación:</label>
+                    <input type="text" id="identificacion" name="identificacion" placeholder="Ingrese la identificación">
+
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingrese el correo del cliente">
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese el teléfono del cliente">
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </form>
+                
+                <!-- Resultados de búsqueda -->
+                <div class="results">
+                    <h3>Resultados de búsqueda:</h3>
+                    <ul>
+                        <li class="result-item">
+                            <p><strong>Nombre:</strong> Juan Pérez</p>
+                            <p><strong>Correo:</strong> juanperez@example.com</p>
+                            <button class="view-btn">Ver Perfil</button>
+                        </li>
+                        <li class="result-item">
+                            <p><strong>Nombre:</strong> Ana Gómez</p>
+                            <p><strong>Correo:</strong> anagomez@example.com</p>
+                            <button class="view-btn">Ver Perfil</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor del perfil -->
+        <div class="right-container">
+            <div class="profile">
+                <h2>Perfil Completo del Cliente</h2>
+                <div class="client-info">
+                    <h3>Juan Pérez</h3>
+                    <p><strong>Identificación:</strong> 12345678</p>
+                    <p><strong>Correo:</strong> juanperez@example.com</p>
+                    <p><strong>Teléfono:</strong> +34 912345678</p>
+                    <p><strong>Dirección:</strong> Calle Ficticia 123, Madrid</p>
+                    <p><strong>Historial de Mantenimiento:</strong> No disponible</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

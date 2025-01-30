@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Técnicos</title>
+    <link rel="stylesheet" href="css/eliminarTecnicos.css">
+</head>
+<body>
+    <header>
+        <h1>Eliminar Tecnicos</h1>
+    </header>
+
+    <div class="delete-container">
+        <h2>Lista de Técnicos</h2>
+
+        <!-- Buscador -->
+        <input type="text" id="buscarTecnico" placeholder="Buscar técnico por nombre, ID o especialidad">
+
+        <!-- Tabla de técnicos -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>ID</th>
+                    <th>Especialidad</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>1001</td>
+                    <td>Tecnico</td>
+                    <td><button class="delete-btn">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>María Gómez</td>
+                    <td>1002</td>
+                    <td>Tecnico</td>
+                    <td><button class="delete-btn">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Mensaje de confirmación -->
+        <div id="confirmacion" class="hidden">
+            <p>¿Está seguro de que desea eliminar este tecnico?</p>
+            <button class="confirm-btn">Confirmar</button>
+            <button class="cancel-btn">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>

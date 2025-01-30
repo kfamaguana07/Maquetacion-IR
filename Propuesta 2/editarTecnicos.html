@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Técnicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/editarTecnicos.css">
+</head>
+<body>
+    <header>
+        <h1>Editar Técnicos</h1>
+    </header>
+
+    <section class="edit-container">
+        <h2><i class="fas fa-user-edit"></i> Buscar Técnico</h2>
+        <input type="text" id="buscarTecnico" placeholder="Ingrese nombre, ID o especialidad">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Especialidad</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Juan Pérez</td>
+                    <td>Electricidad</td>
+                    <td>juan@example.com</td>
+                    <td>987654321</td>
+                    <td><button class="edit-btn">Editar</button></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>María López</td>
+                    <td>Fontanería</td>
+                    <td>maria@example.com</td>
+                    <td>923456789</td>
+                    <td><button class="edit-btn">Editar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2><i class="fas fa-edit"></i> Editar Técnico</h2>
+        <form>
+            <label for="nombre"><i class="fas fa-user"></i> Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese nombre">
+
+            <label for="identificacion"><i class="fas fa-id-badge"></i> Identificación:</label>
+            <input type="text" id="identificacion" placeholder="Ingrese ID">
+
+            <label for="especialidad"><i class="fas fa-tools"></i> Especialidad:</label>
+            <input type="text" id="especialidad" placeholder="Ingrese especialidad">
+
+            <label for="correo"><i class="fas fa-envelope"></i> Correo:</label>
+            <input type="email" id="correo" placeholder="Ingrese correo">
+
+            <label for="telefono"><i class="fas fa-phone"></i> Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Ingrese teléfono">
+
+            <button type="submit"><i class="fas fa-save"></i> Guardar Cambios</button>
+        </form>
+    </section>
+</body>
+</html>

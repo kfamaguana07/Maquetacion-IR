@@ -1,0 +1,178 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0288d1, #0277bd);
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Contenedor principal con dos columnas */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Contenedor izquierdo (búsqueda y resultados) */
+.left-container {
+    flex: 0 0 45%;
+}
+
+/* Contenedor derecho (perfil) */
+.right-container {
+    flex: 0 0 45%;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.search-container h2 {
+    color: #0288d1;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Formulario de búsqueda */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form button {
+    padding: 12px;
+    background-color: #0288d1;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form button:hover {
+    background-color: #01579b;
+}
+
+form button i {
+    margin-right: 10px;
+}
+
+/* Resultados de búsqueda */
+.results {
+    display: block;
+    margin-top: 20px;
+    background: #0288d1;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.results h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.result-item {
+    background: white;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-item p {
+    margin: 5px 0;
+}
+
+.view-btn {
+    background-color: #0288d1;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: #01579b;
+}
+
+/* Perfil del Cliente */
+.profile {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile h2 {
+    color: #0288d1;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.client-info p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-container, .right-container {
+        flex: 0 0 100%;
+    }
+}

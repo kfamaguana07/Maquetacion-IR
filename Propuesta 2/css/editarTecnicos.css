@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1E88E5, #1565C0);
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contenedor principal más pequeño */
+.edit-container {
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 600px;  /* Reducido */
+    width: 85%;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.edit-container h2 {
+    color: #1E88E5;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Buscador */
+#buscarTecnico {
+    width: 90%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+/* Tabla más compacta */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.85rem; /* Reducido */
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Botón de edición más pequeño */
+.edit-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+/* Formulario más compacto */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Botón de guardar más pequeño */
+button {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background: #1E88E5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1565C0;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .edit-container {
+        max-width: 90%;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
